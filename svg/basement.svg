@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1017" height="554">
+
+
+  <!-- Basement Map Properties -->
+  <defs>
+    <linearGradient id="outer-wall" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#A800D4"/>
+      <stop offset="100%" stop-color="#F75300"/>
+    </linearGradient>
+    <path id="outer-wall-path" d="M5.2 259c-3.3-8.7-4.7-23.3-4-44l177 36c208.4.3 359-1.4 452-5s190-11.6 291-24l-.1 23.9c-.1 9.7-13.3 4.4-18.4 7.4-2.7 1.6 18.5 25.7 61.5 25.7 18 13 28 13 28 52 2.2 6.6.5 34.2 0 45-1 18.7-6.2 26.3-38 70-50.2 69-66.6 51.7-90 57-23.4 5.3-35.7 19.4-52 18-16.3-1.4-105.5-33.4-126-35-20.5-1.6 6.7 47.8-56 44-62.7-3.8-106.5-28.8-122-44s-54.7-11.4-56-32c-.3-5.5-3.9-24.8 0-30 5-10 5-10 12-21 3.8-6-14-12-28-19-65.7-33.5-148.6-.5-170-20-21.4-19.5 22-25-61-72s-178.7 3.4-200-33z"/>
+    <filter id="filter-3" width="100.9%" height="102.9%" x="-.5%" y="-.8%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" width="101.5%" height="104.8%" x="-.8%" y="-1.8%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.157206075 0"/>
+    </filter>
+    <linearGradient id="linearGradient-5" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#A800D4"/>
+      <stop offset="100%" stop-color="#F75300"/>
+    </linearGradient>
+    <path id="path-6" d="M5.2 231c-21.3-36.4 40.5-105.1 99-140 58.4-34.9 108-12 183-45s85-38 215-46c140.3 19.7 199.7 156.7 231 172 31.3 15.3 37.8-26.6 94.8-12.7 57 14 86.7 47.6 93 58.6 6.4 11-38.4.9-24.8 28.1 9 18.2 32 29.2 69 33 11.5 4.9 18.8 11.2 22 19 4.7 11.7 17.2 43-33 112s-66.6 59.7-90 65c-23.4 5.3-35.7 19.4-52 18-16.3-1.4-105.5-33.4-126-35-20.5-1.6 6.7 47.8-56 44-62.7-3.8-106.5-28.8-122-44s-54.7-11.4-56-32c-1.3-20.6 49.7-36.5-16-70s-148.6-.5-170-20c-21.4-19.5 22-25-61-72s-178.7 3.4-200-33z"/>
+    <filter id="filter-7" width="103.9%" height="107.8%" x="-2%" y="-3.5%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-8" width="106.1%" height="111.9%" x="-3%" y="-5.6%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.157206075 0"/>
+    </filter>
+    <radialGradient id="radialGradient-9" cx="15.5%" cy="-17.7%" r="168.5%" fx="15.5%" fy="-17.7%" gradientTransform="matrix(.4556 .80834 -.62557 .58871 0 -.2)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-10" width="101.6%" height="101.7%" x="-1.1%" y="-1%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-11" cx="15.5%" cy="-17.7%" r="311.4%" fx="15.5%" fy="-17.7%" gradientTransform="scale(.27422 1) rotate(25.9 .4 .7)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-12" width="100.3%" height="101.3%" x="-.2%" y="-.6%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-13" cx="15.5%" cy="-17.7%" r="166.7%" fx="15.5%" fy="-17.7%" gradientTransform="scale(.7993 1) rotate(54.8 .2 -.1)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-14" width="100.4%" height="101%" x="-.2%" y="-.5%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-15" cx="15.5%" cy="-17.7%" r="195.8%" fx="15.5%" fy="-17.7%" gradientTransform="scale(.54572 1) rotate(44.1 .2 0)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-16" width="101.2%" height="102.7%" x="-.6%" y="-1.4%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-17" cx="15.5%" cy="-17.7%" r="171.6%" fx="15.5%" fy="-17.7%" gradientTransform="scale(.7357 1) rotate(52.5 .2 -.1)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-18" width="102.6%" height="102.9%" x="-.8%" y="-1.7%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-19" cx="15.5%" cy="-17.7%" r="165.1%" fx="15.5%" fy="-17.7%" gradientTransform="scale(.82285 1) rotate(55.6 .2 -.1)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-20" width="101.3%" height="101.8%" x="-.5%" y="-1.1%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-21" cx="15.5%" cy="-17.7%" r="156.8%" fx="15.5%" fy="-17.7%" gradientTransform="scale(1 .99606) rotate(60.7 .2 -.2)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-22" width="102.7%" height="103.2%" x="-1.2%" y="-1.8%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-23" cx="15.5%" cy="-17.7%" r="263.1%" fx="15.5%" fy="-17.7%" gradientTransform="scale(1 .54127) rotate(73 .3 -.3)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-24" width="105.3%" height="105.4%" x="-3.3%" y="-4.2%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-25" cx="15.5%" cy="-17.7%" r="323.1%" fx="15.5%" fy="-17.7%" gradientTransform="scale(1 .43397) rotate(76.3 .3 -.3)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-26" width="106.9%" height="107.1%" x="-4.1%" y="-5.6%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radialGradient-27" cx="15.5%" cy="-17.7%" r="184.4%" fx="15.5%" fy="-17.7%" gradientTransform="scale(1 .81265) rotate(65.4 .2 -.2)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#817C7C"/>
+    </radialGradient>
+    <filter id="filter-28" width="103.2%" height="103.2%" x="-2.1%" y="-2.3%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic"/>
+    </filter>
+  </defs>
+
+
+  <!-- Basement Map -->
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(-7 -231)">
+      <g transform="translate(24.8 248)">
+        <!-- Walls -->
+        <g>
+          <!-- Outer Wall Sides -->
+          <g filter="url(#filter-3)">
+            <use fill="#000" filter="url(#filter-4)" xlink:href="#outer-wall-path"/>
+            <use fill="url(#outer-wall)" stroke="#979797" xlink:href="#outer-wall-path"/>
+          </g>
+          <!-- Wall Top Surface -->
+          <g filter="url(#filter-7)">
+            <use fill="#000" filter="url(#filter-8)" xlink:href="#path-6"/>
+            <use fill="url(#linearGradient-5)" stroke="url(#linearGradient-5)" xlink:href="#path-6"/>
+          </g>
+          <!-- Internal Walls -->
+          <g stroke="#979797" opacity=".6">
+            <path fill="url(#radialGradient-9)" d="M36.7 190.8l64-48.6 45.2-34.3 3.2 22-85.5 65z" filter="url(#filter-10)"/>
+            <path fill="url(#radialGradient-11)" d="M145.9 107.9L499.2 33v19l-350 77.9z" filter="url(#filter-12)"/>
+            <path fill="url(#radialGradient-13)" d="M499.2 33l238 167.3-1.7 23L499.2 52V33z" filter="url(#filter-14)"/>
+            <path fill="url(#radialGradient-15)" d="M737.3 200.3l92-28.2-2.5 22-91.3 29.2 1.8-23z" filter="url(#filter-16)"/>
+            <path fill="url(#radialGradient-17)" d="M829.3 172l64 40.7-25.4 8.2-41-26.7 2.4-22.1z" filter="url(#filter-18)"/>
+            <path fill="url(#radialGradient-19)" d="M839.4 230.7l-3 22.5 84.7 60.1 15.7-14.8z" filter="url(#filter-20)"/>
+            <path fill="url(#radialGradient-21)" d="M921 315.9l-4.8 24.2 33 22.9 14-18z" filter="url(#filter-22)"/>
+            <path fill="url(#radialGradient-23)" d="M524 349.7v25.2l-11.8 20.4-13-1.3z" filter="url(#filter-24)"/>
+            <path fill="url(#radialGradient-25)" d="M557 405.7v27.7l-6.3 12.3-11-3 17.4-37z" filter="url(#filter-26)"/>
+            <path fill="url(#radialGradient-27)" d="M350.4 250.8l1.5 26.5-25 30.6-21.4-2.7 44.9-54.4z" filter="url(#filter-28)"/>
+          </g>
+        </g>
+        <!-- Map Lands -->
+        <g class="map-lands" fill="#FFF" stroke="#979797" transform="translate(63.6 52)">
+          <!-- Horror -->
+          <path class="room" id="horror" d="M460.3 322.9L672 171.3l91.4-29.1 41 26.7-28.5 9.8-3 22.5 84.7 60.1-4.8 26.8 33 22.9-89 91.7-51.6-29-27.8 29.8-119.1-25.4-12.3 38.6-98.7-23 6.3-12.3v-27.8l-44.9-10.3z"/>
+          <!-- History -->
+          <path class="room" id="history" d="M288.3 225.3l55.2-82.5-22.8-23.2-2-45L331 70l7.2 4.5 11.6-2.6 6.3 5.2 10.2-2.3 6.2 5.2 8.2-2.1 5.8 4.7 12.8-2.6 5.4 5.2 10-2.6 5 4 9.6-1.4 6.3 5.4 89.8-24.8L435.7 0 85.6 77.9 0 142.8l288.3 56v26.5z"/>
+          <!-- Fantasy -->
+          <g class="room" id="fantasy" transform="translate(263.3 65.8)">
+            <path d="M408.7 105.5L262.2 0l-89.8 24.5 19 16.7v6.4L80.2 77l-54.4 80.5L0 190 197 232V257z"/>
+            <!-- Stairs in Fantasy World -->
+            <g transform="translate(55.4 4.2)">
+              <path d="M24.9 72.8L2 49.6 0 4.6l22.4 20.8L25 72.8z"/>
+              <path d="M24.9 72.2l109.8-28.5V37L121 40.8v-7.4L104.4 39v-6.8L86.2 37v-7.6l-15.2 4V26l-15.7 4.3v-7l-19.3 5.3v-7.4l-13.5 4 2.3 47z"/>
+              <path d="M36.1 21.1L13.8 0 0 4.6l22.6 20.6z"/>
+              <path d="M36.1 28.5l17.5-5.7L31.3 2 19.6 4.6l17 16.5z"/>
+              <path d="M55.4 30.2L71.1 26l-23.4-21L37.6 7l17.8 16v7.1z"/>
+              <path d="M71 33.4l15.3-4L62.1 7.9l-8.5 2 17.5 15.3z"/>
+              <path d="M86.3 37l18-5-24.2-21.2L68 12.6l18.3 16.8z"/>
+              <path d="M105 38.7l14.8-5.3L96 12.6l-10 2.6 18.2 16.9z"/>
+              <path d="M121.9 41l12.8-4-24.3-21-8.5 1.2 20 16.2V41z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

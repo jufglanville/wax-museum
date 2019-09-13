@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="595px" height="410px" viewBox="0 0 595 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-199.000000, -241.000000)" stroke="#979797">
+            <g id="Group" transform="translate(486.266601, 452.447590) rotate(-31.000000) translate(-486.266601, -452.447590) translate(172.766601, 124.447590)">
+                <polygon id="Entrance" fill="#FF931F" transform="translate(460.673296, 475.711862) rotate(31.000000) translate(-460.673296, -475.711862) " points="356.123067 328.570877 565.223525 328.570877 565.223525 622.852846 356.123067 622.852846"></polygon>
+                <polygon id="Journey-Start" fill="#64BCFF" transform="translate(238.738517, 410.377910) rotate(31.000000) translate(-238.738517, -410.377910) " points="358.530516 499.21616 166.072996 499.21616 118.946518 432.30717 172.164336 388.506634 334.588558 388.506634 334.588558 321.53966 358.530516 321.53966"></polygon>
+                <polygon id="Stairs" fill="#C8D1D8" transform="translate(280.305432, 370.775116) rotate(31.000000) translate(-280.305432, -370.775116) " points="360.922619 337.29163 199.688244 337.29163 199.688244 403.951786 360.922619 404.258603"></polygon>
+                <polygon id="Gift-Shop" fill="#C4FF00" transform="translate(253.228760, 245.618589) rotate(31.000000) translate(-253.228760, -245.618589) " points="205.873522 416.237178 61 207.674296 260.281187 75 445 75 445.45752 305.469668 260.281187 305.469668 260.281187 372.129824"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,475 @@
+html,body{
+    margin:0;
+    }
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer {
+    height: 50px;
+    text-align:  center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav li {
+    list-style-type: none;
+    margin: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+a:hover{
+    color: #00B0D4;
+}
+
+.svg-map {
+    max-height: calc(100vh - 250px);
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    height: calc(100vh - 250px);
+}
+
+
+
+.logo {
+    position: relative;
+    height: 120px;
+    animation: myfirst 5s linear 2s alternate;
+}
+
+.modal-content-container {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    opacity: 0;
+}
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -100;
+}
+#wax-banner-location {
+    /* transform: translate(5vh, -95vh); */
+    position: absolute;
+}
+
+.modal-fade-in {
+    animation-name: fadeIn;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 1.2s;
+}
+
+.fade-in-map {
+    animation-name: fadeInMap;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInMap {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fade-out {
+    animation-name: fadeOut;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 0.5s;
+}
+
+.modal-drip {
+    position: relative;
+    animation-name: modal-drip; 
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    opacity: 0;
+}
+
+.modal-drip:nth-child(1) {
+    animation-duration: 5s;
+}
+.modal-drip:nth-child(2) {
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.modal-drip:nth-child(3) {
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+.modal-drip:nth-child(4) {
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+.modal-drip:nth-child(5) {
+    animation-duration: 5s;
+}
+
+.drip {
+    animation-name: drip; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    opacity: 0;
+}
+
+.drip:nth-child(1) {
+    animation-duration: 5s;
+}
+.drip:nth-child(2) {
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+.drip:nth-child(3) {
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.drip:nth-child(4) {
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes drip {
+    0% {opacity: 0;}
+    70% {opacity: 1;
+        transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 300px);
+        opacity: 1;}
+}
+
+@keyframes modal-drip {
+    0% {opacity: 0;}
+    70% {opacity: 1;
+        transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 1000px);
+        opacity: 1;}
+}
+
+.logo:hover {
+    transform: rotate3d(1,1,0, 360deg);
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.3px;
+}
+
+.floors {
+    /* margin: 30px 10px; */
+    text-align: right;
+    margin-right: 50px;
+}
+    .floors p {
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.1px;
+        font-size: 25px;
+        padding: 40px 10px;
+        border-right: 3px solid transparent;
+        transition-duration: 0.5s;
+    }
+    .floors p:hover {
+        border-right: 3px solid gray;
+    }
+
+/* Selected Floor Map */
+.floors .floor-active{
+    border-right: 3px solid lightblue;
+}
+
+.map {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.room {
+    transition-duration: 0.5s;
+}
+
+.room:nth-child(1):hover {
+    fill: #0091FF;
+}
+.room:nth-child(2):hover {
+    fill: #FF00B4;
+}
+.room:nth-child(3):hover {
+    fill: #FFE600;
+}
+.room:nth-child(4):hover {
+    fill: #22FF00;
+}
+.room:nth-child(5):hover {
+    fill: #ff0000;
+}
+
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* opacity: 0; */
+    position: fixed; /* Stay in place */
+    z-index: -100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);  */
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+#modal-data {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+    #modal-data p {
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .modal-logo {
+        width: 15%;
+        margin: auto;
+    }
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.modal-img {
+    max-height: 80%;
+    width: 90%;
+    margin: 0% auto;
+    border-radius: 20px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Wax Image Banner */
+
+/* #wax-banner {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: -800px;
+    z-index: 1000;
+} */
+
+/* Wax Banner Stuff */
+
+
+#wax-banner-container {
+    position: absolute;
+    transform: translate(0px, -100vh);
+    z-index: -1000; /* Needs to be behind Maps to allow user/map interaction */ 
+}
+/* Wax Banner Location */
+
+#wax-banner-location {
+    transform: translate(0, -200vh);
+}
+
+.wax-banner {
+    animation-name: drip-banner; 
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+}
+
+.wax-banner-drip-path {
+    stroke: #ffffff;
+}
+
+
+@keyframes drip-banner {
+    0% {transform: translate(0px, -100vh);
+        opacity: 0;}
+    1% {opacity: 1;
+        transform: translate(0px, -100vh);}
+    100% {transform: translate(0px, 2000px);
+        opacity: 1;}
+}
+
+
+
+
+/* Ticket Page */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    /* height: 100%; */
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.prices {
+    display: inline-flex;
+    margin: 5%;
+    margin-top: 0;
+}
+.price-choice {
+    width: 50%;
+    margin: 5% 5% 0 5%;
+    
+}
+.price {
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+.card ul {
+    text-align: left;
+    margin-right: 10%;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+.card h2,
+.btn {
+    margin: 0;
+    padding: 25px 0;
+    background-color: #ffb108;
+    color: #ffffff;
+    font-weight: 800;
+}
+.btn {
+    text-transform: uppercase;
+}
+
+
+.card-container,
+.contact-container {
+    margin: 5%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-container {
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgba(50, 197, 255, 0.507), rgba(255, 255, 0, 0.445));
+    margin: 0 25%;
+    box-shadow: 1px 1px 12px #464646;
+}
+
+.ticket-img {
+    width: 80%;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 15px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input, 
+textarea,
+option,
+select,
+label {
+    font-family: 'Open Sans', sans-serif;
+}
+textarea {
+    margin-bottom: 10px;
+}
+
+form .btn {
+    background-color: #32C5FF;
+    height: 70px;
+}
+
+input,
+select,
+textarea {
+    border-radius: 5px;
+    border: 1px #9b9797 solid;
+    padding-left: 4px;
+}
+
+input,
+select {
+    height: 30px;
+}

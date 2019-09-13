@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 520 555" xmlns="http://www.w3.org/2000/svg">
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-280 -226)" stroke="#979797">
+            <g transform="translate(172.77 124.45)">
+                <polygon class="a" transform="translate(460.67 475.71) rotate(31) translate(-460.67 -475.71)" points="356.12 328.57 565.22 328.57 565.22 622.85 356.12 622.85" fill="#FF931F"/>
+                <polygon class="b" transform="translate(238.74 410.38) rotate(31) translate(-238.74 -410.38)" points="358.53 499.22 166.07 499.22 118.95 432.31 172.16 388.51 334.59 388.51 334.59 321.54 358.53 321.54" fill="#64BCFF"/>
+                <polygon class="c" transform="translate(280.31 370.78) rotate(31) translate(-280.31 -370.78)" points="360.92 337.29 199.69 337.29 199.69 403.95 360.92 404.26" fill="#C8D1D8"/>
+                <polygon class="d" transform="translate(253.23 245.62) rotate(31) translate(-253.23 -245.62)" points="205.87 416.24 61 207.67 260.28 75 445 75 445.46 305.47 260.28 305.47 260.28 372.13" fill="#C4FF00"/>
+            </g>
+        </g>
+    </g>
+</svg>
